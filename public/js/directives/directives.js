@@ -23,7 +23,10 @@ habitrpg.directive('habitrpgAdsense', function() {
     restrict: 'A',
     transclude: true,
     replace: true,
-    template: '<div ng-transclude></div>',
+    template: '<div><script type="text/javascript" async="async" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>' +
+              '<ins class="adsbygoogle" style="display: inline-block; width: 234px; height: 60px;" ' +
+              'data-ad-client="ca-pub-3242350243827794" data-ad-slot="9529624576"></ins>' +
+              '<script type="text/javascript">(adsbygoogle = window.adsbygoogle || []).push({});</script></div>',
     link: function ($scope, element, attrs) {}
   }
 })
