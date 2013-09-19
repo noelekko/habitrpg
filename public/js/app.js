@@ -12,8 +12,8 @@ window.habitrpg = angular.module('habitrpg',
     function($routeProvider, $httpProvider, STORAGE_SETTINGS_ID) {
       $routeProvider
         //.when('/login', {templateUrl: 'views/login.html'})
-        .when('/tasks',   {templateUrl: 'partials/tasks'})
-        .when('/options', {templateUrl: 'partials/options'})
+        .when('/tasks',   {templateUrl: 'tasksTmpl'})
+        .when('/options', {templateUrl: 'optionsTmpl'})
 
         .otherwise({redirectTo: '/tasks'});
 
